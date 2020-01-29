@@ -144,11 +144,11 @@ class ProdutoList extends TPage
         $panel->addFooter($this->pageNavigation);
         
         // header actions
-        $dropdown = new TDropDown(_t('Export'), 'fa:list');
+        $dropdown = new TDropDown('Exportar', 'fa:list');
         $dropdown->setPullSide('right');
         $dropdown->setButtonClass('btn btn-default waves-effect dropdown-toggle');
-        $dropdown->addAction( _t('Save as CSV'), new TAction([$this, 'onExportCSV'], ['register_state' => 'false', 'static'=>'1']), 'fa:table blue' );
-        $dropdown->addAction( _t('Save as PDF'), new TAction([$this, 'onExportPDF'], ['register_state' => 'false', 'static'=>'1']), 'far:file-pdf red' );
+        $dropdown->addAction('Salvar em CSV', new TAction([$this, 'onExportCSV'], ['register_state' => 'false', 'static'=>'1']), 'fa:table blue' );
+        $dropdown->addAction('Salvar em PDF', new TAction([$this, 'onExportPDF'], ['register_state' => 'false', 'static'=>'1']), 'far:file-pdf red' );
         $panel->addHeaderWidget( $dropdown );
         
         $panel->addHeaderActionLink( _t('New'),  new TAction(['ProdutoForm', 'onEdit'], ['register_state' => 'false']), 'fa:plus green' );

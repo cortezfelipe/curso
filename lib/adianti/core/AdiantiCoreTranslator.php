@@ -131,6 +131,7 @@ class AdiantiCoreTranslator
         $this->messages['en'][] = 'The parameter (^1) of ^2 must not be empty';
         $this->messages['en'][] = 'Return is not a valid JSON. Check the URL';
         $this->messages['en'][] = 'Required fields';
+        $this->messages['en'][] = 'Export';
         
         $this->messages['pt'][] = 'Carregando';
         $this->messages['pt'][] = 'Arquivo não encontrado';
@@ -242,6 +243,7 @@ class AdiantiCoreTranslator
         $this->messages['pt'][] = 'O parâmetro (^1) de ^2 não deve ser vazio';
         $this->messages['pt'][] = 'Retorno não é JSON válido. Verifique a URL';
         $this->messages['pt'][] = 'Campos obrigatórios';
+        $this->messages['pt'][] = 'Exportar';
 		
         $this->messages['es'][] = 'Cargando';
         $this->messages['es'][] = 'Archivo no encontrado';
@@ -353,6 +355,7 @@ class AdiantiCoreTranslator
         $this->messages['es'][] = 'El parametro (^1) de ^2 no puede estar vacío';
         $this->messages['es'][] = 'El retorno no es un JSON válido. Verifique la URL';
         $this->messages['es'][] = 'Campos requeridos';
+        $this->messages['es'][] = 'Export';
     }
     
     /**
