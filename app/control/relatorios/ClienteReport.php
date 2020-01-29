@@ -29,8 +29,12 @@ class ClienteReport extends TPage
         
         $this->form->addAction('Gerar', new TAction([$this, 'onGenerate']), 'fa:download blue');
         
-
-        parent::add( $this->form );
+        $container = new TVBox;
+        $container->style = 'width: 100%';
+        $container->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
+        $container->add($this->form);
+        
+        parent::add($container);
     }
     
     public function onGenerate($param)

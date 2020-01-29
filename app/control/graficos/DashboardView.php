@@ -13,8 +13,8 @@ class DashboardView extends TPage
         
         $indicador1->enableSection('main', ['title' => 'Acessos',
                                             'icon' => 'sign-in-alt',
-                                            'background' => 'green',
-                                            'value' => 130] );
+                                            'background' => 'blue',
+                                            'value' => 160] );
         
         $indicador2->enableSection('main', ['title' => 'Clientes',
                                             'icon' => 'user',

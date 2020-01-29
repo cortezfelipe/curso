@@ -13,6 +13,7 @@ class ClienteForm extends TPage
         $this->form = new BootstrapFormBuilder('form_cliente');
         $this->form->setFormTitle('Cliente');
         
+        
         $id   = new TEntry('id');
         $nome = new TEntry('nome');
         $endereco = new TEntry('endereco');

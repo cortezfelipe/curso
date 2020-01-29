@@ -9,11 +9,12 @@ class CollectionShortcurts extends TPage
         {
             TTransaction::open('curso');
             
-            /*
-            $clientes = Cliente::all();
-            echo '<pre>'; print_r($clientes); echo '</pre>';
-            */
+            TTransaction::dump();
             
+            
+            //$clientes = Cliente::all();
+            //echo '<pre>'; print_r($clientes); echo '</pre>';
+
             /*
             $count = Cliente::where('situacao', '=', 'Y')
                             ->where('genero', '=', 'F')

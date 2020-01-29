@@ -87,7 +87,7 @@ class DatagridFormatacao extends TPage
         $item->estado = 'Tenessee (US)';
         $item->pais   = 'Estados Unidos';
         $item->nascimento = '1942-03-25';
-        $item->cache = 1200000;
+        $item->cache = 12000;
         $this->datagrid->addItem($item);
         
         $item = new stdClass;
@@ -97,7 +97,7 @@ class DatagridFormatacao extends TPage
         $item->estado = 'Surrey (UK)';
         $item->pais   = 'Reino Unido';
         $item->nascimento = '1945-03-30';
-        $item->cache = 900000;
+        $item->cache = 90000;
         $this->datagrid->addItem($item);
         
         $item = new stdClass;

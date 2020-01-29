@@ -36,7 +36,7 @@ $(function() {
         if (typeof google === 'undefined' || typeof google.visualization === 'undefined') {
             jQuery.ajax({
                     type: "GET",
-                    url: "https://www.gstatic.com/charts/loader.js",
+                    url: "app/lib/include/google/loader.js",
                     success: function() {
                         google.charts.load('current', {'packages':['bar', 'line', 'corechart']});
                         google.charts.setOnLoadCallback(render_charts);
