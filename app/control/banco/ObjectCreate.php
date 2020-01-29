@@ -1,6 +1,5 @@
-
 <?php
-class ObjectStore extends TPage
+class ObjectCreate extends TPage
 {
     public function __construct()
     {
@@ -9,16 +8,13 @@ class ObjectStore extends TPage
         try
         {
             TTransaction::open('curso');
-             
-            TTransaction::dump();
             
-            $produto = new Produto;
-            $produto->descricao = 'GRAVADOR DVD';
-            $produto->estoque = 10;
-            $produto->preco_venda = 100;
-            $produto->unidade = 'PC';
-            $produto->local_foto =  '';
-            $produto->store();
+            Produto::create( [
+                'descricao' => 'CABO HDMI',
+                'estoque' => 5,
+                'preco_venda' => 20,
+                'unidade' => 'PC'
+            ]);
             
             new TMessage('info', 'Produto gravado com sucesso');
             
