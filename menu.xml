@@ -103,7 +103,7 @@
         </menu>
     </menuitem>
     
-    <menuitem label='Banco de dados'>
+    <menuitem label='Banco de dados (Aula)'>
         <icon>fa:cube fa-fw</icon>
         <menu>
             <menuitem label='Conexão manual'>
