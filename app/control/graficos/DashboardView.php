@@ -14,12 +14,12 @@ class DashboardView extends TPage
         $indicador1->enableSection('main', ['title' => 'Acessos',
                                             'icon' => 'sign-in-alt',
                                             'background' => 'green',
-                                            'value' => 100] );
+                                            'value' => 130] );
         
         $indicador2->enableSection('main', ['title' => 'Clientes',
                                             'icon' => 'user',
                                             'background' => 'orange',
-                                            'value' => 200] );
+                                            'value' => 210] );
         
         $div->add( $i1 = TElement::tag('div', $indicador1) );
         $div->add( $i2 = TElement::tag('div', $indicador2) );
